@@ -101,5 +101,14 @@ heroes = ["thor" , "ironman" , "CAptain AMerica" , "Spiderman" , "Shaktiman"]
 print(findlen(cities))
 print(findlen(heroes))
 
+# WAF which will take a number as an input whcih will print odd if the number passed in parameter is odd
+# else it should print even 
 
+def evenOdd(n):
+    if n%2!=0:
+        print("odd")
+    else:
+        print("even")
+
+evenOdd(5)
 
