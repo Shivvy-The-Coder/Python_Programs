@@ -69,3 +69,75 @@ print(sqbox1)
 # this will display the first 3 rows and first two coloumns
 sqbox1 = matrix[0:3 , 0:2]
 print(sqbox1)
+
+
+
+# creating an array without using any other data structure like we previously done
+
+import numpy as np
+n=int(input("Enter the size of the array"))
+arr=np.ndarray(shape=(n) , dtype=int)
+
+print("Enter the array elements")
+for i in range (n):
+      arr[i]=int(input())
+
+print("Array elements ", arr)
+
+print(arr.size)
+
+# constructing 2d array 
+
+import numpy as np
+
+r=int(input("Enter number of rows"))
+c=int(input("Enter number of cols"))
+
+arr =np.ndarray(shape=(r,c) , dtype=int)
+
+for i in  range(r):
+      for j in range(c):
+            arr[i][j]=int(input())
+            
+print(arr)
+
+print(arr.ndim)
+print(arr.size)
+print(arr.shape)
+print(arr.dtype) 
+
+
+# import numpy as np
+
+#how to take input in n dimensional array in python
+
+import numpy as np
+arr=np.ndarray(shape=(3,3,3), dtype = int)
+
+x=arr.shape[0]
+y=arr.shape[1]
+z=arr.shape[1]
+print(x,y,z)
+
+val=1
+for i in range(x):
+      for j in range (y):
+            for k in range (z):
+                  arr[i][j][k]=val
+                  val+=1
+
+print(arr)
+
+
+
+# how to reshape an array 
+import numpy as np
+mylist=[10,20,30,40,50,60,70,80]
+arr = np.array(mylist)
+print(arr)
+print(arr.size)
+print(arr.ndim)
+
+res=arr.reshape(2,2,2)
+# this means we are reshaping  the array to 2 rows 4 coloiumns
+print(res)
