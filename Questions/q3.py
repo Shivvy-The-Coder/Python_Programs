@@ -14,3 +14,8 @@ nameit()
 
 
 print(name)
+
+
+# here we can see that we have declared len =5 where as len is builtin fcuntion that we are using
+
+print(len)
