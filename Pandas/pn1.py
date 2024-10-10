@@ -40,4 +40,11 @@ df.rename(columns={'EST':"DATE" , "Temperature":"temp"},inplace=True)
 print(df)
 
 
-#
+# applying a function on a coloumn  in pandas
+# method1
+df['temp + 3 degrees']=df['temp'].apply(lambda x:x+3)
+# print(df["temp + 3 degrees"])
+print(df)
+# method2
+df['temp+20']=df['temp']**2
+print(df)
