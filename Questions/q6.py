@@ -60,7 +60,7 @@ class Hand():
     cards from that hand. There should be an add and remove card method here.
     '''
     def __init__(self,cards):
-        
+        pass
 
 
 class Player:
