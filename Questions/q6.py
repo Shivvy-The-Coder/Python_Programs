@@ -49,7 +49,7 @@ class Deck:
         print("Shuffling deck")
         random.shuffle(self.allcards)
     
-    def spli_half(self):
+    def spli_half(self): 
         print("Splitting the half to comuter and player")
         return (self.allcards[0:26] , self.allcards[26:52])
 
@@ -60,8 +60,13 @@ class Hand():
     cards from that hand. There should be an add and remove card method here.
     '''
     def __init__(self,cards):
-        pass
+        self.cards=cards
 
+    def __str__(self):
+        return "contains {} cards".format(len(self.cards))
+
+    def add(self,added_cards):
+        self.cards.extend(added_cards)
 
 class Player:
     """
