@@ -14,4 +14,7 @@ print(c1)
 c2=df.Temperature
 print(c2)
 
-print(df.head(10))
+print(df.head(20))
+
+
+print(df.EST , df.Temperature)
