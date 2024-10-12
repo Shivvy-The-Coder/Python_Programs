@@ -68,6 +68,8 @@ print("meantemp",meanTemp)
 print("mediantemp",medianTemp)
 print("sumtemp",sumTemp)
 
+# i am adding this comment just fir the purpose of  testing the commit functionality of github
+
 # filterng rows based on coloumn values
 
 Temp_Greater_30 = df[df['temp']>30]
@@ -99,5 +101,4 @@ print(df_sorted_asc)
 check_null_values_in_temp = df['temp'].isnull()
 print(check_null_values_in_temp)
 
-
-
+print("learning python was great")
